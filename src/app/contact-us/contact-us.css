@@ -1,0 +1,214 @@
+.container-center-screen2 {
+    min-height: 100vh; /* min-h-screen */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    padding: 3rem 1rem; /* py-12 px-4 */
+}
+
+@media (min-width: 640px) { /* sm breakpoint */
+    .container-center-screen2 {
+        padding-left: 1.5rem; /* sm:px-6 */
+        padding-right: 1.5rem; /* sm:px-6 */
+    }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .container-center-screen2 {
+        padding-left: 2rem; /* lg:px-8 */
+        padding-right: 2rem; /* lg:px-8 */
+    }
+}
+.card-container2 {
+    max-width: 56rem; /* max-w-4xl */
+    width: 100%; /* w-full */
+    background-color: white; /* bg-white */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 1.25rem 1rem; /* py-5 px-4 */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .card-container2 {
+        flex-direction: row; /* lg:flex-row */
+    }
+}
+.section2 {
+    width: 100%; /* w-full */
+    padding: 1rem; /* p-4 */
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .section2 {
+        width: 50%; /* lg:w-1/2 */
+        padding-right: 2rem; /* lg:pr-8 */
+        border-left: none; /* lg:border-l-0 */
+    }
+}
+.title2 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    text-align: center; /* text-center */
+    color: #3b0764; /* text-violet-950 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.description2 {
+    color: #4b5563; /* text-gray-600 */
+    margin-bottom: 1.5rem; /* mb-6 */
+    text-align: justify; /* text-justify */
+}
+.space-y-42 > * + * {
+    margin-top: 1rem; /* 4 units of space, equivalent to 1rem */
+}
+.violet2 {
+    display: flex;
+    align-items: center;
+    color: #1e026b; /* Use the specific violet color code */
+}
+.space2 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* This corresponds to space-x-4 */
+    padding-top: 1rem; /* This corresponds to pt-4 */
+}
+.hover2 {
+    height: 2rem; /* This corresponds to h-8 (2rem = 32px by default) */
+    transition: transform 0.2s; /* This corresponds to duration-200 */
+}
+
+.hover2:hover {
+    transform: scale(1.1); /* This corresponds to hover:scale-110 */
+}
+.custom-width-padding2 {
+    width: 100%; /* This corresponds to w-full */
+    padding: 0.75rem; /* This corresponds to p-3 (0.75rem = 12px by default) */
+}
+
+@media (min-width: 1024px) { /* Adjust the breakpoint according to your design */
+    .custom-width-padding2 {
+        width: 50%; /* This corresponds to lg:w-1/2 */
+    }
+}
+.custom-space-y-24 > * + * {
+    margin-top: 1rem; /* This corresponds to space-y-4 (1rem = 16px by default) */
+}
+.custom-flex2 {
+    display: flex;
+    flex-direction: column; /* Default: stack items vertically */
+    gap: 1rem; /* This corresponds to space-y-4 (1rem = 16px by default) */
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .custom-flex2 {
+        flex-direction: row; /* Change to horizontal layout */
+        gap: 0; /* Remove vertical spacing */
+    }
+    
+    .custom-flex2 > * + * {
+        margin-left: 1rem; /* This corresponds to lg:space-x-4 (1rem = 16px by default) */
+    }
+}
+.custom-width2 {
+    width: 100%; /* Full width by default */
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .custom-width2 {
+        width: 50%; /* Half width on large screens */
+    }
+}
+.custom-text2 {
+    display: block; /* Makes the element a block element */
+    font-size: 0.875rem; /* Equivalent to text-sm in Tailwind CSS */
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin: 0.5rem 0; /* Equivalent to my-2 (top and bottom margin) */
+    color: #6f2c91; /* Equivalent to text-violet-950, adjust if needed */
+}
+.custom-input2 {
+    margin-top: 1rem; /* Equivalent to mt-4 */
+    height: 2.25rem; /* Equivalent to h-9 */
+    padding: 0.5rem; /* Equivalent to p-2 */
+    display: block; /* Makes the element a block element */
+    width: 100%; /* Equivalent to w-full */
+    border: 1px solid #d1d5db; /* Equivalent to border border-gray-300 */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-sm */
+    transition: border-color 0.2s, box-shadow 0.2s; /* Smooth transition for focus states */
+}
+
+/* Focus states */
+.custom-input2:focus {
+    ring: 2px solid #6366f1; /* Equivalent to focus:ring-indigo-500 */
+    border-color: #6366f1; /* Equivalent to focus:border-indigo-500 */
+    outline: none; /* Removes default outline */
+}
+.custom-input22 {
+    margin-top: 1rem; /* Equivalent to mt-4 */
+    padding: 0.5rem; /* Equivalent to p-2 */
+    display: block; /* Makes the element a block element */
+    width: 100%; /* Equivalent to w-full */
+    border: 1px solid #d1d5db; /* Equivalent to border border-gray-300 */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-sm */
+    transition: border-color 0.2s, box-shadow 0.2s; /* Smooth transition for focus states */
+}
+
+/* Focus states */
+.custom-input22:focus {
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); /* Equivalent to focus:ring-indigo-500 */
+    border-color: #6366f1; /* Equivalent to focus:border-indigo-500 */
+    outline: none; /* Removes default outline */
+}
+.display2{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-button222 {
+    margin-top: 1.25rem; /* Equivalent to my-5 (20px top margin) */
+    margin-bottom: 1.25rem; /* Equivalent to my-5 (20px bottom margin) */
+    display: inline-flex; /* Makes the element an inline flex container */
+    justify-content: center; /* Centers the content horizontally */
+    padding-top: 0.5rem; /* Equivalent to py-2 (8px top padding) */
+    padding-bottom: 0.5rem; /* Equivalent to py-2 (8px bottom padding) */
+    padding-left: 4rem; /* Equivalent to px-16 (64px left padding) */
+    padding-right: 4rem; /* Equivalent to px-16 (64px right padding) */
+    border: 1px solid transparent; /* Sets a transparent border */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-sm */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 600; /* Equivalent to font-semibold */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    color: white; /* Equivalent to text-white */
+    background-color: #6d28d9; /* Equivalent to bg-violet-900 */
+    transition: background-color 0.2s, box-shadow 0.2s; /* Smooth transition for hover and focus states */
+}
+
+/* Hover state */
+.custom-button222:hover {
+    background-color: #5b21b6; /* Equivalent to hover:bg-violet-950 */
+}
+
+/* Focus states */
+.custom-button222:focus {
+    outline: none; /* Removes default outline */
+    box-shadow: 0 0 0 2px rgba(31, 41, 55, 0.5); /* Focus ring */
+}
+
+/* Focus ring offset */
+.custom-button222:focus {
+    position: relative; /* Required for the offset */
+}
+
+.custom-button222:focus::after {
+    content: '';
+    position: absolute;
+    top: -0.25rem; /* Adjust according to the desired offset */
+    left: -0.25rem; /* Adjust according to the desired offset */
+    right: -0.25rem; /* Adjust according to the desired offset */
+    bottom: -0.25rem; /* Adjust according to the desired offset */
+    border-radius: inherit; /* Match the border radius */
+    box-shadow: 0 0 0 2px #22c55e; /* Equivalent to focus:ring-green-500 */
+}

@@ -1,0 +1,323 @@
+.CT {
+    margin-bottom: 1.5rem;             /* Equivalent to 'mb-6' (1.5rem = 24px) */
+    display: flex;                     /* Equivalent to 'flex' */
+    flex-direction: column-reverse;    /* Default for mobile: 'flex-col-reverse' */
+    align-items: center;               /* Equivalent to 'items-center' */
+    justify-content: space-around;     /* Equivalent to 'justify-around' */
+    min-height: 100vh;                 /* Equivalent to 'min-h-screen' */
+}
+
+/* For medium screens and up, using a media query */
+@media (min-width: 768px) {
+    .CT {
+        flex-direction: row;           /* Changes to 'flex-row' on medium screens */
+    }
+}
+.CA {
+    text-align: center;           /* Equivalent to 'text-center' */
+    color: white;                 /* Equivalent to 'text-white' */
+}
+
+/* For medium screens and up, using a media query */
+@media (min-width: 768px) {
+    .CA {
+        text-align: left;         /* Changes to 'text-left' on medium screens */
+    }
+}
+.CB {
+    margin-top: 2rem; /* Equivalent to 'mt-8' */
+}
+
+/* For medium screens and up */
+@media (min-width: 768px) {
+    .CB {
+        margin-top: 0;        /* Equivalent to 'md:mt-0' */
+        margin-left: 1rem;    /* Equivalent to 'md:ml-4' */
+    }
+}
+.CC {
+    color: #fde047; /* Equivalent to 'text-yellow-500' */
+    font-weight: 600; /* Equivalent to 'font-semibold' */
+    font-size: 1.5rem; /* Equivalent to 'text-2xl' */
+}
+
+/* For medium screens and up */
+@media (min-width: 768px) {
+    .CC {
+        font-size: 1.875rem; /* Equivalent to 'md:text-3xl' */
+    }
+}
+.CD {
+    overflow: hidden; /* Equivalent to 'overflow-hidden' */
+    border-right: 4px solid #fde047; /* Equivalent to 'border-r-4 border-yellow-500' */
+    white-space: nowrap; /* Equivalent to 'whitespace-nowrap' */
+    font-size: 1.875rem; /* Equivalent to 'text-3xl' */
+    font-weight: 700; /* Equivalent to 'font-bold' */
+    color: #ffffff; /* Equivalent to 'text-white' */
+    animation: typing 2s steps(30, end), blink 0.75s step-end infinite; /* Equivalent to 'animate-typing' */
+}
+
+/* For medium screens and up */
+@media (min-width: 768px) {
+    .CD {
+        font-size: 2.25rem; /* Equivalent to 'md:text-4xl' */
+    }
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Keyframes for cursor blink effect */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+.CE {
+    animation: blink 1s infinite;
+}
+.CG {
+    margin-top: 1.25rem /* 20px */;
+}
+
+.CF {
+    font-size: 1.125rem; /* Equivalent to 'text-lg' */
+}
+
+/* For medium screens and up */
+@media (min-width: 768px) {
+    .CF {
+        font-size: 1.25rem; /* Equivalent to 'md:text-xl' */
+    }
+}
+.CH {
+    position: relative;
+    padding: 0.5rem 1rem; /* Equivalent to px-4 py-2 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #ffffff; /* Equivalent to text-white */
+    background: linear-gradient(to right, #fbbf24, #f59e0b); /* From yellow-500 to yellow-600 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow */
+}
+
+.CH:hover {
+    background: linear-gradient(to right, #f59e0b, #d97706); /* Hover from yellow-600 to yellow-700 */
+    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Equivalent to hover:shadow-xl */
+}
+
+/* Responsive font size for medium screens */
+@media (min-width: 768px) {
+    .CH {
+        font-size: 1rem; /* Equivalent to md:text-base */
+    }
+}
+.CI {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Equivalent to inset-0 */
+    width: 100%; /* Equivalent to w-full */
+    height: 100%; /* Equivalent to h-full */
+    background-color: #b45309; /* Equivalent to bg-yellow-700 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.3s ease; /* Equivalent to transition-opacity duration-300 */
+}
+
+.CI:hover {
+    opacity: 0.2; /* Equivalent to hover:opacity-20 */
+}
+.CJ {
+    display: flex; /* Equivalent to flex */
+    margin-top: 2.5rem; /* Equivalent to mt-10 */
+    gap: 1.5rem; /* Equivalent to gap-6 */
+    justify-content: center; /* Default justify-center */
+
+    /* For medium screens and up */
+}
+
+@media (min-width: 768px) {
+    .CJ {
+        justify-content: flex-start; /* Equivalent to md:justify-start */
+    }
+}
+.CK {
+    position: relative; /* Equivalent to relative */
+    display: flex; /* Equivalent to flex */
+    align-items: center; /* Equivalent to items-center */
+}
+.CL {
+    height: 2.75rem; /* Equivalent to h-11 */
+    width: 2.75rem; /* Equivalent to w-11 */
+    display: flex; /* Equivalent to flex */
+    align-items: center; /* Equivalent to items-center */
+    justify-content: center; /* Equivalent to justify-center */
+    transition: all 0.3s; /* Equivalent to transition-all duration-300 */
+    background-color: #2d3748; /* Equivalent to bg-gray-800 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+}
+
+.group:hover .CL {
+    background-color: #4a5568; /* Equivalent to group-hover:bg-gray-700 */
+}
+.CM {
+    height: 2rem /* 32px */;
+}
+
+.CN {
+    position: absolute; /* Equivalent to absolute */
+    left: 50%; /* Equivalent to left-1/2 */
+    transform: translateX(-50%) translateY(-100%); /* Equivalent to transform -translate-x-1/2 -translate-y-full */
+    margin-top: 0.5rem; /* Equivalent to mt-2 */
+    padding-left: 0.5rem; /* Equivalent to px-2 */
+    padding-right: 0.5rem; /* Equivalent to px-2 */
+    padding-top: 0.25rem; /* Equivalent to py-1 */
+    padding-bottom: 0.25rem; /* Equivalent to py-1 */
+    background-color: #2d3748; /* Equivalent to bg-gray-800 */
+    color: white; /* Equivalent to text-white */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    opacity: 0; /* Equivalent to opacity-0 */
+    transition: opacity 0.3s; /* Equivalent to transition-opacity duration-300 */
+}
+
+.group:hover .CN {
+    opacity: 1; /* Equivalent to group-hover:opacity-100 */
+}
+.CLL {
+    height: 2.75rem; /* Equivalent to h-11 */
+    width: 2.75rem; /* Equivalent to w-11 */
+    display: flex; /* Equivalent to flex */
+    align-items: center; /* Equivalent to items-center */
+    justify-content: center; /* Equivalent to justify-center */
+    transition: all 0.3s; /* Equivalent to transition-all duration-300 */
+    background-color: #2563eb; /* Equivalent to bg-gray-800 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+}
+
+.groupe:hover .CLL {
+    background-color:#2563eb; /* Equivalent to group-hover:bg-gray-700 */
+}
+
+.CNN {
+    position: absolute; /* Equivalent to absolute */
+    left: 50%; /* Equivalent to left-1/2 */
+    transform: translateX(-50%) translateY(-100%); /* Equivalent to transform -translate-x-1/2 -translate-y-full */
+    margin-top: 0.5rem; /* Equivalent to mt-2 */
+    padding-left: 0.5rem; /* Equivalent to px-2 */
+    padding-right: 0.5rem; /* Equivalent to px-2 */
+    padding-top: 0.25rem; /* Equivalent to py-1 */
+    padding-bottom: 0.25rem; /* Equivalent to py-1 */
+    background-color: #1d4ed8; /* Equivalent to bg-blue-700 */
+    color: white; /* Equivalent to text-white */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    opacity: 0; /* Equivalent to opacity-0 */
+    transition: opacity 0.3s; /* Equivalent to transition-opacity duration-300 */
+}
+
+.groupp:hover .CNN {
+    opacity: 1; /* Equivalent to group-hover:opacity-100 */
+}
+.CCC {
+    height: 2.75rem; /* Equivalent to h-11 */
+    width: 2.75rem; /* Equivalent to w-11 */
+    display: flex; /* Equivalent to flex */
+    align-items: center; /* Equivalent to items-center */
+    justify-content: center; /* Equivalent to justify-center */
+    background-color: #d1006c; /* Equivalent to bg-pink-600 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    transition: all 0.3s; /* Equivalent to transition-all duration-300 */
+}
+
+/* Hover effect for the parent group */
+.groupc:hover .CCC {
+    background-color: #e60073; /* Equivalent to group-hover:bg-pink-500 */
+}
+.CCH {
+    position: absolute; /* Equivalent to absolute */
+    left: 50%; /* Equivalent to left-1/2 */
+    transform: translateX(-50%) translateY(-100%); /* Equivalent to transform -translate-x-1/2 -translate-y-full */
+    margin-top: 0.5rem; /* Equivalent to mt-2 */
+    padding: 0.25rem 0.5rem; /* Equivalent to px-2 py-1 */
+    background-color: #d1006c; /* Equivalent to bg-pink-600 */
+    color: white; /* Equivalent to text-white */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    opacity: 0; /* Equivalent to opacity-0 */
+    transition: opacity 0.3s; /* Equivalent to transition-opacity duration-300 */
+}
+
+/* Hover effect for the parent group */
+.groupc:hover .CCH {
+    opacity: 1; /* Equivalent to group-hover:opacity-100 */
+}
+.custom-container {
+    position: relative; /* Equivalent to relative */
+    display: flex; /* Equivalent to flex */
+    justify-content: center; /* Equivalent to justify-center */
+    align-items: center; /* Equivalent to items-center */
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
+    padding-top: 6rem; /* Equivalent to pt-24 */
+    animation: slide-in-right 0.5s forwards; /* Equivalent to animate-slide-in-right */
+}
+
+/* Media query for md breakpoint */
+@media (min-width: 768px) {
+    .custom-container {
+        margin-bottom: 0; /* Equivalent to md:mb-0 */
+        padding-top: 0; /* Equivalent to md:pt-0 */
+    }
+}
+
+/* Keyframes for slide-in-right animation */
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        transform: translateX(0); /* End at original position */
+        opacity: 1; /* Fully opaque */
+    }
+}
+
+.custom-spin {
+    position: relative; /* Equivalent to relative */
+    transition: transform 0.3s; /* Equivalent to transition-transform duration-300 */
+}
+
+.custom-spin:hover {
+    transform: scale(1.10); /* Equivalent to hover:scale-110 */
+}
+
+.custom-style {
+    object-fit: cover; /* Equivalent to object-cover */
+    border-radius: 50%; /* Equivalent to rounded-full */
+    border-width: 4px; /* Equivalent to border-4 */
+    border-color: #FBBF24; /* Equivalent to border-yellow-500 */
+    border-style: solid; /* Required for the border to be visible */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
+}
+.custom-background {
+    position: absolute; /* Equivalent to absolute */
+    top: 0; /* Equivalent to inset-0 */
+    left: 0; /* Equivalent to inset-0 */
+    right: 0; /* Equivalent to inset-0 */
+    bottom: 0; /* Equivalent to inset-0 */
+    border-radius: 50%; /* Equivalent to rounded-full */
+    background: linear-gradient(to right, #7C3AED, #FBBF24); /* Equivalent to bg-gradient-to-r from-violet-500 to-yellow-500 */
+    opacity: 0.4; /* Equivalent to opacity-40 */
+    animation: pulse 2s infinite; /* Equivalent to animate-pulse */
+}
+

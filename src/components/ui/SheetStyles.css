@@ -1,0 +1,355 @@
+/* Base styles */
+.sheet-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0; /* Start with opacity 0 for the fade effect */
+    transition: opacity 0.3s ease; /* Fade effect */
+  }
+  
+  /* State Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Apply fade in when open */
+  .sheet-overlay[data-state="open"] {
+    opacity: 1;
+    animation: fadeIn 0.3s forwards;
+  }
+  
+  /* Apply fade out when closed */
+  .sheet-overlay[data-state="closed"] {
+    opacity: 0;
+    animation: fadeOut 0.3s forwards;
+  }
+  
+
+  /* Base styles */
+.sheet-content {
+    position: fixed;
+    z-index: 50;
+    gap: 1rem; /* Equivalent to gap-4 */
+    background-color: blueviolet; /* Assuming --background is defined in your CSS variables */
+    padding: 1.5rem; /* Equivalent to p-6 */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
+    transition: all 0.3s ease-in-out; /* Base transition for smooth in-out effect */
+  }
+  
+  /* State Animations */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(0); /* Adjust as needed for slide-in effect */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-10px);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(10px); /* Adjust as needed for slide-out effect */
+    }
+  }
+  
+  /* Open state */
+  .sheet-content[data-state="open"] {
+    animation: slideIn 0.5s forwards; /* 0.5s duration for open */
+  }
+  
+  /* Closed state */
+  .sheet-content[data-state="closed"] {
+    animation: slideOut 0.3s forwards; /* 0.3s duration for close */
+  }
+
+
+  /* Base styles */
+.sheet-content-top {
+    top: 0;
+    left: 0;
+    right: 0; /* Equivalent to inset-x-0 */
+    border-bottom: 1px solid #e5e7eb; /* Assuming this color for the border, adjust as needed */
+    position: fixed;
+  }
+  
+  /* Slide-in and slide-out animations */
+  @keyframes slideInFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOutToTop {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+  
+  /* Open state */
+  .sheet-content-top[data-state="open"] {
+    animation: slideInFromTop 0.5s forwards;
+  }
+  
+  /* Closed state */
+  .sheet-content-top[data-state="closed"] {
+    animation: slideOutToTop 0.3s forwards;
+  }
+  
+  /* Base styles */
+.sheet-content-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0; /* Equivalent to inset-x-0 */
+    border-top: 1px solid #e5e7eb; /* Assuming a color for the border; adjust as needed */
+    position: fixed;
+  }
+  
+  /* Slide-in and slide-out animations */
+  @keyframes slideInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOutToBottom {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+  
+  /* Open state */
+  .sheet-content-bottom[data-state="open"] {
+    animation: slideInFromBottom 0.5s forwards;
+  }
+  
+  /* Closed state */
+  .sheet-content-bottom[data-state="closed"] {
+    animation: slideOutToBottom 0.3s forwards;
+  }
+  
+  /* Base styles */
+.sheet-content-left {
+    top: 0;
+    bottom: 0; /* Equivalent to inset-y-0 */
+    left: 0;
+    height: 100%; /* Full height */
+    width: 75%; /* Equivalent to w-3/4 */
+    max-width: 640px; /* Equivalent to sm:max-w-sm */
+    border-right: 1px solid #e5e7eb; /* Assuming a color for the border; adjust as needed */
+    position: fixed;
+    background-color: #fff; /* Optional background */
+    z-index: 50;
+  }
+  
+  /* Slide-in and slide-out animations */
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutToLeft {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Open state */
+  .sheet-content-left[data-state="open"] {
+    animation: slideInFromLeft 0.5s forwards;
+  }
+  
+  /* Closed state */
+  .sheet-content-left[data-state="closed"] {
+    animation: slideOutToLeft 0.3s forwards;
+  }
+  
+
+
+
+  /* Base styles */
+.sheet-content-right {
+    top: 0;
+    bottom: 0; /* Equivalent to inset-y-0 */
+    right: 0;
+    height: 100%; /* Full height */
+    width: 75%; /* Equivalent to w-3/4 */
+    max-width: 640px; /* Equivalent to sm:max-w-sm */
+    border-left: 1px solid #e5e7eb; /* Assuming a color for the border; adjust as needed */
+    position: fixed;
+    z-index: 50;
+  }
+  
+  /* Slide-in and slide-out animations */
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutToRight {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Open state */
+  .sheet-content-right[data-state="open"] {
+    animation: slideInFromRight 0.5s forwards;
+  }
+  
+  /* Closed state */
+  .sheet-content-right[data-state="closed"] {
+    animation: slideOutToRight 0.3s forwards;
+  }
+  
+
+
+
+  /* Base Styles */
+.close-button {
+  position: absolute;
+  right: 1rem; /* Equivalent to right-4 */
+  top: 1rem;   /* Equivalent to top-4 */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm */
+  opacity: 0.7; /* Equivalent to opacity-70 */
+  transition: opacity 0.2s ease; /* Equivalent to transition-opacity */
+  outline: none; /* Equivalent to focus:outline-none */
+  pointer-events: auto;
+}
+
+/* Hover and Focus States */
+.close-button:hover {
+  opacity: 1; /* Equivalent to hover:opacity-100 */
+}
+
+.close-button:focus {
+  outline: 2px solid #000; /* Customize based on `ring` color */
+  outline-offset: 2px; /* Equivalent to focus:ring-offset-2 */
+}
+
+/* Disabled State */
+.close-button:disabled {
+  pointer-events: none;
+}
+
+
+
+.icon-size {
+  height: 1rem; /* Equivalent to h-4 */
+  width: 1rem;  /* Equivalent to w-4 */
+}
+
+.sronly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.containersheet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Equivalent to space-y-2 (spacing between items) */
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .containersheet {
+    text-align: left; /* For screens larger than 640px (sm) */
+  }
+}
+
+
+.containersheet2 {
+  display: flex;
+  flex-direction: column-reverse; /* Stacks items in reverse order (column-reverse) by default */
+}
+
+@media (min-width: 640px) {
+  .containersheet2 {
+    flex-direction: row; /* Switch to row layout on screens larger than 640px (sm breakpoint) */
+    justify-content: flex-end; /* Aligns items to the right on larger screens */
+    gap: 0.5rem; /* Adds horizontal spacing between items */
+  }
+}
+
+
+.foreground {
+  font-size: 1.125rem; /* This corresponds to text-lg in Tailwind, which is 18px by default */
+  font-weight: 600; /* This corresponds to font-semibold in Tailwind */
+  color: var(--foreground-color); /* Replace with your actual foreground color */
+}
+
+
+.foreground2 {
+  font-size: 0.875rem; /* This corresponds to text-sm in Tailwind, which is 14px by default */
+  color: var(--muted-foreground-color); /* Replace with your actual muted foreground color */
+}

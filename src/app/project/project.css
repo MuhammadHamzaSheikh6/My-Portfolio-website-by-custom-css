@@ -1,0 +1,154 @@
+/* project.css */
+.project-sectionn {
+    z-index: 0; /* z-0 */
+    width: 100%; /* w-full */
+    height: auto; /* h-auto */
+    background-color: white; /* bg-white */
+  }
+  .project-headerr {
+    padding-top: 2rem;         /* pt-8 */
+    font-size: 2.25rem;        /* text-4xl */
+    color: #6B21A8;            /* text-violet-950 (Hex value for the color) */
+    font-weight: bold;         /* font-bold */
+    text-align: center;        /* text-center */
+}
+.flex-centerr {
+    display: flex;              /* flex */
+    justify-content: center;    /* justify-center */
+    padding-top: 3rem;         /* py-12 (1 rem = 16px, so 12 * 0.25rem = 3rem) */
+    padding-bottom: 3rem;      /* py-12 (adds equal padding to the bottom) */
+}
+.custom-containerr {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-2xl */
+    position: relative;          /* relative */
+    z-index: 10;                /* z-10 */
+    padding-left: 1.5rem;       /* px-6 */
+    padding-right: 1.5rem;      /* px-6 */
+    height: 500px;              /* h-[500px] */
+    width: 100%;                /* w-full */
+    border-radius: 1rem;        /* rounded-2xl */
+    background-color: #10002b;  /* bg-[#10002b] */
+    color: white;               /* text-white */
+    display: flex;              /* flex */
+    flex-direction: column;     /* flex-col */
+    align-items: center;        /* items-center */
+    justify-content: center;    /* justify-center */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Media Queries for responsive styles */
+@media (min-width: 768px) { /* md */
+    .custom-containerr {
+        padding-left: 5rem;   /* md:px-20 */
+        padding-right: 5rem;  /* md:px-20 */
+        height: 400px;        /* md:h-[400px] */
+        width: 1100px;        /* md:w-[1100px] */
+        flex-direction: row;   /* md:flex-row */
+    }
+}
+.custom-marginn {
+    margin-bottom: 1.5rem; /* mb-6 (6 * 0.25rem) */
+}
+
+/* Media Queries for responsive styles */
+@media (min-width: 768px) { /* md */
+    .custom-marginn {
+        margin-bottom: 0;    /* md:mb-0 */
+        margin-right: 1.5rem; /* md:mr-6 (6 * 0.25rem) */
+    }
+}
+.custom-textt {
+    font-size: 1.125rem; /* text-lg (lg: 18px) */
+    color: #FBBF24; /* text-yellow-500 */
+    padding-bottom: 1.5rem; /* pb-6 (6 * 0.25rem) */
+}
+
+/* Media Queries for responsive styles */
+@media (min-width: 1024px) { /* lg */
+    .custom-textt {
+        font-size: 1.5rem; /* lg:text-2xl (2rem) */
+    }
+}
+.custom-text-justifyy {
+    padding-right: 1.5rem; /* pr-6 (6 * 0.25rem) */
+    text-align: left; /* Default text alignment */
+}
+
+/* Media Queries for responsive styles */
+@media (min-width: 1024px) { /* lg */
+    .custom-text-justifyy {
+        font-size: 1.125rem; /* lg:text-lg (1.125rem or 18px) */
+        text-align: justify; /* lg:text-justify */
+    }
+}
+.custom-buttonn {
+    padding-left: 0.75rem; /* px-3 (3 * 0.25rem) */
+    padding-right: 0.75rem; /* px-3 */
+    padding-top: 0.25rem; /* py-1 (1 * 0.25rem) */
+    padding-bottom: 0.25rem; /* py-1 */
+    border-radius: 0.5rem; /* rounded-lg */
+    margin-top: 1.5rem; /* mt-6 (6 * 0.25rem) */
+    font-weight: 600; /* font-semibold */
+    font-size: 1rem; /* text-base (1rem or 16px) */
+    background-color: #fbbf24; /* bg-yellow-600 */
+    transition: background-color 0.3s; /* For hover effect */
+}
+
+/* Media Queries for responsive styles */
+@media (min-width: 1024px) { /* lg */
+    .custom-buttonn {
+        padding-left: 2rem; /* lg:px-8 (8 * 0.25rem) */
+        padding-right: 2rem; /* lg:px-8 */
+        padding-top: 0.5rem; /* lg:py-2 (2 * 0.25rem) */
+        padding-bottom: 0.5rem; /* lg:py-2 */
+    }
+}
+
+.custom-buttonn:hover {
+    background-color: #c6a600; /* hover:bg-yellow-900 */
+}
+.custom-imageee {
+    transition: transform 0.2s; /* transition-transform duration-200 */
+    border-radius: 0.75rem; /* rounded-xl */
+    border-width: 4px; /* border-4 */
+    border-style: solid; /* Default border style */
+    border-color: white; /* border-white */
+    width: max-content; /* w-max */
+}
+
+.custom-imageee:hover {
+    transform: scale(1.1); /* hover:scale-110 */
+}
+.custom-arrow-button {
+    position: absolute; /* absolute */
+    left: 1rem; /* left-4 (1rem = 16px) */
+    top: 50%; /* top-1/2 */
+    transform: translateY(-50%); /* -translate-y-1/2 */
+    color: white; /* text-white */
+    background-color: #8A2BE2; /* bg-violet-600 (hex equivalent) */
+    border-radius: 9999px; /* rounded-full (fully rounded) */
+    padding: 0.5rem; /* p-2 (8px) */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+/* Hover state */
+.custom-arrow-button:hover {
+    background-color: #FBBF24; /* hover:bg-yellow-900 (hex equivalent) */
+}
+.custom-buttonrr {
+    position: absolute; /* absolute */
+    right: 1rem; /* right-4 (1rem = 16px) */
+    top: 50%; /* top-1/2 */
+    transform: translateY(-50%); /* -translate-y-1/2 */
+    color: white; /* text-white */
+    background-color: #8A2BE2; /* bg-violet-600 (hex equivalent) */
+    border-radius: 9999px; /* rounded-full (fully rounded) */
+    padding: 0.5rem; /* p-2 (8px) */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+/* Hover state */
+.custom-buttonrr:hover {
+    background-color: #FBBF24; /* hover:bg-yellow-900 (hex equivalent) */
+}

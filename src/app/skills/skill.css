@@ -1,0 +1,109 @@
+.skill-container {
+    margin: 1rem;
+    padding: 1.25rem;
+    color: white;
+}
+
+.skill-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 0.75rem;
+}
+
+.skill-section {
+    margin-bottom: 2rem;
+}
+
+.skill-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skill-card {
+    position: relative;
+    width: 18rem; /* Fixed width for mobile */
+    height: 18rem; /* Fixed height for mobile */
+    border-radius: 0.5rem; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin: 0.5rem;
+    transition: transform 0.5s;
+}
+
+/* Media query for desktop screens */
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    .skill-card {
+        width: 15rem; /* Smaller width for desktop */
+        height: 15rem; /* Smaller height for desktop */
+    }
+}
+
+.skill-card-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(128, 0, 255, 0.5); /* Violet background */
+    backdrop-filter: blur(10px);
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+.skill-card-back {
+    background-color: white;
+    color: #6a0dad; /* Violet text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Text and logo sizes */
+.skill-logo {
+    width: 100px; /* Set the logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.skill-name {
+    font-size: 1.25rem; /* Set consistent font size for the name */
+    font-weight: bold;
+}
+
+.skill-description {
+    font-size: 0.875rem; /* Set consistent font size for the description */
+}
+
+/* Rotate class */
+.skill-card-rotate-y {
+    transform: rotateY(180deg);
+}
+
+/* Flex class */
+.flex-center {
+    display: flex;             /* Equivalent to 'flex' */
+    flex-wrap: wrap;          /* Equivalent to 'flex-wrap' */
+    justify-content: center;   /* Equivalent to 'justify-center' */
+    padding: 1rem;            /* Equivalent to 'p-4' */
+}
+.custom-line {
+    display: block; /* Equivalent to block */
+    height: 0.25rem; /* Equivalent to h-1 (4px) */
+    margin-left: 18rem; /* Equivalent to mx-72 (72 * 0.25rem) */
+    margin-right: 18rem; /* Equivalent to mx-72 */
+    background-color: #6b46c1; /* Equivalent to bg-violet-950 (Tailwind violet-950) */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

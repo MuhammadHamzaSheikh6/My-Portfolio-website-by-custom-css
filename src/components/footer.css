@@ -1,0 +1,59 @@
+.custom-gradienttt {
+    background: linear-gradient(to right, #6b46c1, #000000); /* Corresponds to bg-gradient-to-r from-violet-950 to-black */
+    color: #ffffff; /* Equivalent to text-white */
+    padding-top: 1rem; /* Equivalent to py-4 (1rem top and bottom padding) */
+    padding-bottom: 1rem; /* Ensures consistent vertical padding */
+}
+.custom-containerrr {
+    max-width: 1280px; /* Equivalent to container, adjust as needed */
+    margin-left: auto; /* Equivalent to mx-auto */
+    margin-right: auto; /* Equivalent to mx-auto */
+    display: flex; /* Equivalent to flex */
+    flex-direction: column; /* Equivalent to flex-col */
+    align-items: center; /* Equivalent to items-center */
+    justify-content: space-around; /* Equivalent to justify-around */
+    padding-left: 1rem; /* Equivalent to px-4 (1rem left and right padding) */
+    padding-right: 1rem; /* Ensures consistent horizontal padding */
+}
+
+/* Media query for medium screens and up */
+@media (min-width: 768px) { /* md breakpoint */
+    .custom-containerrr {
+        flex-direction: row; /* Change to flex-row on medium screens */
+    }
+}
+.custom-texttt {
+    text-align: center; /* Equivalent to text-center */
+    margin-bottom: 1rem; /* Equivalent to mb-4 (1rem) */
+}
+
+/* Media query for medium screens and up */
+@media (min-width: 768px) { /* md breakpoint */
+    .custom-texttt {
+        text-align: left; /* Change to text-left on medium screens */
+        margin-bottom: 0; /* Change to mb-0 on medium screens */
+    }
+}
+.text-baseee {
+    font-size: 1rem; /* Equivalent to text-base (1rem) */
+    line-height: 1.5; /* Optional: Default line height for better readability */
+}
+.custom-flexxx {
+    display: flex;
+    gap: 1rem; /* Equivalent to gap-4 (1rem = 16px * 0.25) */
+    justify-content: center; /* Default justification for small screens */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+    .custom-flexxx {
+        justify-content: flex-end; /* Change justification for medium screens and up */
+    }
+}
+.custom-transformmm {
+    transition: transform 0.2s; /* Equivalent to duration-200 */
+}
+
+.custom-transformmm:hover {
+    transform: scale(1.1); /* Equivalent to hover:scale-110 */
+}
+

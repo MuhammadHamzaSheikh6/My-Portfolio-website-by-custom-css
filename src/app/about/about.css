@@ -1,0 +1,118 @@
+.bgWhitePadding {
+    background-color: white;  /* Same as bg-white */
+    padding-bottom: 4rem;     /* Same as pb-16 */
+}
+.textCenterPaddingTop {
+    text-align: center; /* Same as text-center */
+    padding-top: 7rem;  /* Same as pt-28 */
+}
+.largeBoldVioletText {
+    font-size: 2.25rem;  /* Equivalent to text-4xl */
+    color: #4c1d95;      /* Equivalent to text-violet-950 */
+    font-weight: bold;   /* Equivalent to font-bold */
+}
+.fontbold {
+    font-weight: 700;
+}
+.customDivider {
+    display: block;          /* Equivalent to block */
+    height: 0.25rem;         /* Equivalent to h-1 */
+    margin-left: 18rem;      /* Equivalent to mx-72 */
+    margin-right: 18rem;     /* Equivalent to mx-72 */
+    background-color: #4c1d95; /* Equivalent to bg-violet-950 */
+    margin-top: 1rem;        /* Equivalent to mt-4 */
+}
+.responsiveFlex {
+    display: flex;                  /* Equivalent to flex */
+    flex-direction: column;         /* Equivalent to flex-col */
+    padding-left: 2rem;             /* Equivalent to px-8 */
+    padding-right: 2rem;            /* Equivalent to px-8 */
+    padding-top: 3rem;              /* Equivalent to pt-12 */
+}
+
+@media (min-width: 768px) {         /* Equivalent to md: (for medium screens and above) */
+    .responsiveFlex {
+        flex-direction: row;        /* Equivalent to md:flex-row */
+        padding-left: 7rem;         /* Equivalent to md:px-28 */
+        padding-right: 7rem;        /* Equivalent to md:px-28 */
+    }
+}
+.flexCenterResponsive {
+    flex: 1;                           /* Equivalent to flex-1 */
+    display: flex;                     /* Equivalent to flex */
+    justify-content: center;           /* Equivalent to justify-center */
+    margin-bottom: 2rem;               /* Equivalent to mb-8 */
+}
+
+@media (min-width: 768px) {            /* Applies to medium screens and above */
+    .flexCenterResponsive {
+        margin-bottom: 0;              /* Equivalent to md:mb-0 */
+    }
+}
+.relativeFlexCenterAnimate {
+    position: relative;                /* Equivalent to relative */
+    display: flex;                     /* Equivalent to flex */
+    align-items: center;               /* Equivalent to items-center */
+    margin-bottom: 2rem;               /* Equivalent to mb-8 */
+    padding-top: 3rem;                 /* Equivalent to pt-12 */
+    animation: slideInLeft 0.5s ease-out; /* Equivalent to animate-slide-in-left */
+}
+
+@media (min-width: 768px) {            /* Applies to medium screens and above */
+    .relativeFlexCenterAnimate {
+        margin-bottom: 0;              /* Equivalent to md:mb-0 */
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.relativeSpinHover {
+    position: relative;                    /* Equivalent to relative */
+    transition: transform 0.3s ease-in-out; /* Equivalent to transition-transform duration-300 */
+}
+
+.relativeSpinHover:hover {
+    transform: scale(1.1);                 /* Equivalent to hover:scale-110 */
+}
+.roundedProfileImage {
+    object-fit: cover;               /* Equivalent to object-cover */
+    border-radius: 9999px;           /* Equivalent to rounded-full */
+    border: 4px solid #5e0acc;       /* Equivalent to border-4 border-violet-950 */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Equivalent to shadow-lg */
+}
+.gradientBackground {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px; /* Makes the element circular */
+    background: linear-gradient(to right, #7c3aed, #fbbf24); /* Violet to yellow gradient */
+    opacity: 0.5;
+}
+.flex1 {
+    flex: 1 1 0%;
+}
+/* styles.css */
+/* styles.css */
+.custom-title {
+    font-weight: bold; /* Equivalent to font-bold */
+    font-family: 'Courier New', Courier, monospace; /* Example monospace font */
+    font-size: 1.5rem; /* Equivalent to text-2xl (24px) */
+    line-height: 1.5; /* Optional for better readability */
+}
+
+/* styles.css */
+.custom-block {
+    display: block; /* Equivalent to block */
+    height: 0.25rem; /* Equivalent to h-1 (4px) */
+    margin-left: 18rem; /* Equivalent to mx-72 (72 * 0.25rem) */
+    margin-right: 18rem; /* Equivalent to mx-72 */
+    background-color: #6b46c1; /* Equivalent to bg-violet-950 (Tailwind violet-950) */
+    margin-top: 4rem; /* Equivalent to mt-16 (64px) */
+}

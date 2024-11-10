@@ -1,0 +1,162 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.animate {
+    animation: slide 0.5s ease-out forwards;
+}
+.head{
+    position: fixed;
+    top: 1rem;
+    width: 91.666667%;
+    z-index: 50;
+    --tw-bg-opacity: 1;
+    background-color: rgb(109 40 217 / var(--tw-bg-opacity)) /* #6d28d9 */;
+    --tw-bg-opacity: 0.1;
+    padding: 1rem;
+    border-radius: 9999px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 768px) {
+    .md {
+        width: 80%;
+    }
+}
+@media (min-width: 1024px) {
+    .lg {
+        width: 75%;
+    }
+}
+
+.flex-justify-between {
+    display: flex;                    
+    justify-content: space-between;    /* Distributes items evenly with space between them */
+    align-items: center;               /* Vertically centers items */
+    width: 100%;                       /* Full width of the parent container */
+    padding-left: 1rem;               /* 4 units (1rem) of padding on the left */
+    padding-right: 1rem;              /* 4 units (1rem) of padding on the right */
+}
+.custom-text {
+    padding-left: 1rem;             /* Equivalent to pl-4 */
+    font-family: serif;             /* Sets the font to a serif typeface */
+    color: white;                   /* Sets the text color to white */
+    font-weight: bold;              /* Makes the font bold */
+    font-size: 2.25rem;             /* Equivalent to text-4xl (36px) */
+}
+.text-yellow{
+    color: #D97706;
+}
+.custom-class {
+    display: none; /* Hidden by default */
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .custom-class {
+        display: flex; /* Show as flex on large screens */
+    }
+}
+
+.custom-class {
+    gap: 2.25rem; /* Gap 9 translates to 2.25rem (36px) */
+    font-size: 1.125rem; /* Text-lg translates to 1.125rem (18px) */
+    padding-top: 0.5rem; /* Py-2 translates to padding-top and padding-bottom of 0.5rem (8px) */
+    padding-bottom: 0.5rem;
+    scroll-behavior: smooth; /* Scroll-smooth */
+}
+
+.custom-link {
+    color: white; /* text-white */
+    border-bottom: 2px solid transparent; /* border-b-2 border-transparent */
+    transition: color 0.2s ease, border-color 0.2s ease; /* transition duration-200 */
+}
+
+.custom-link:hover {
+    color: #fbbf24; /* hover:text-yellow-500 (yellow-500 hex code) */
+    border-color: #fbbf24; /* hover:border-yellow-500 */
+}
+.custom-button {
+    font-size: 1rem; /* text-base */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); /* drop-shadow-lg */
+    color: #fbbf24; /* text-yellow-500 (yellow-500 hex code) */
+    font-weight: 600; /* font-semibold */
+    background-color: #7c3aed; /* bg-violet-600 (violet-600 hex code) */
+    border-radius: 0.75rem; /* rounded-xl */
+    border: none; /* default no border */
+    transition: border 0.2s ease; /* transition for hover */
+}
+
+.custom-button:hover {
+    border: 2px solid #fbbf24; /* hover:border-2 hover:border-yellow-500 */
+}
+
+.custom-classs {
+    display: none; /* Hide by default for medium screens and larger */
+    color: white; /* Set text color to white */
+    font-size: 2.25rem; /* Font size equivalent to text-4xl (36px) */
+}
+
+/* Media query to show the element on smaller screens */
+@media (max-width: 767px) { /* This is the 'md' breakpoint in Tailwind */
+    .custom-classs {
+        display: block; /* Show on smaller screens */
+    }
+}
+.violet {
+    background-color: #6B46C1; /* Hex code for bg-violet-600 */
+}
+.custom-heading {
+    padding-left: 1rem; /* Equivalent to pl-4 */
+    font-family: serif; /* Equivalent to font-serif */
+    color: white; /* Equivalent to text-white */
+    font-weight: bold; /* Equivalent to font-bold */
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+}
+
+.custom-list {
+    margin-top: 1.5rem; /* Equivalent to pt-6 */
+}
+
+.custom-list > li {
+    margin-bottom: 1.75rem; /* Equivalent to space-y-7 (margin-bottom for each list item) */
+}
+
+.custom-links {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    color: black; /* Equivalent to text-black */
+    border-bottom: 2px solid transparent; /* Equivalent to border-b-2 border-transparent */
+    transition: color 0.2s ease, border-color 0.2s ease; /* Equivalent to transition duration-200 */
+}
+
+.custom-links:hover {
+    color: #fbbf24; /* Equivalent to hover:text-yellow-500 (this is the hex for a yellow shade in Tailwind) */
+    border-color: #fbbf24; /* Equivalent to hover:border-yellow-500 */
+}
+.op {
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+}
+.custom-buttonm {
+    font-size: 1rem; /* Equivalent to text-base */
+    padding: 0.5rem 1rem; /* Equivalent to px-4 py-2 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.1); /* Equivalent to drop-shadow-lg */
+    color: #fbbf24; /* Equivalent to text-yellow-500 */
+    font-weight: 600; /* Equivalent to font-semibold */
+    background-color: rgba(0, 0, 0, 0.5); /* Equivalent to bg-black/50 */
+    border-radius: 0.75rem; /* Equivalent to rounded-xl */
+    transition: border-color 0.2s ease; /* For smooth border transition */
+}
+
+/* Hover effects */
+.custom-buttonm:hover {
+    border: 2px solid #fbbf24; /* Equivalent to hover:border-2 hover:border-yellow-500 */
+}
